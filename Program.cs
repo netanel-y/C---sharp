@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleApp3
+namespace ConsoleApp1
 {
     class Program
     {
@@ -8,21 +8,18 @@ namespace ConsoleApp3
         {
             int num = Convert.ToInt32(Console.ReadLine());
 
-
-
-
             Console.WriteLine("Enter length of array: ");
 
-            // length of array: 
+            // הגדרת אורך המערך: 
             int lengthOfArray = Convert.ToInt32(Console.ReadLine());
 
 
-            // number to multiply cells. 
+            // מספר להכפלת התאים. 
             Console.WriteLine("Enter number to multiply: ");
             int NumToMul = Convert.ToInt32(Console.ReadLine());
 
 
-            // initialize array: 
+            // אתחול המערך: 
             int[] arr = new int[lengthOfArray];
 
             Console.WriteLine($"Num of elements: {lengthOfArray}, num to mul:{NumToMul}");
@@ -32,18 +29,6 @@ namespace ConsoleApp3
                 Console.Write(arr[i] + ", ");
             }
 
-
-            /*
-             * OUTPUT:
-             * ----------------
-            Enter length of array:
-            4
-            Enter number to multiply:
-            3
-            Num of elements: 4, num to mul:3
-            0, 3, 6, 9,
-             
-             */
         }
     }
 }
